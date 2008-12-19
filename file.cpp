@@ -1,3 +1,5 @@
+#include <iostream>
+using namespace std;
 #include <cstring>
 #include "file.h"
 
@@ -17,3 +19,10 @@ file::~file()
 {
 	delete[] path;
 }
+
+ostream  &operator<<( ostream &o, file f)
+{
+   o<<f.path;
+   return o;
+}
+

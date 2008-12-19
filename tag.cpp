@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 #include <cstring>
 #include "tag.h"
 
@@ -16,6 +19,12 @@ tag::tag(const tag &ctag)
 tag::~tag()
 {
 	delete[] name;
+}
+
+ostream  &operator<<( ostream &o, tag t)
+{
+   o<<t.name;
+   return o;
 }
 
 

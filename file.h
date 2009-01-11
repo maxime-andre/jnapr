@@ -1,11 +1,17 @@
 #ifndef FILE_H
 #define FILE_H
 
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+
 class file {
 private:
-	char *path;
+	string path;
 public:
-	file(const char *);
+	file(const string&);
 	file(const file&);
 	~file();
 	friend ostream &operator<<( ostream &, file);

@@ -1,3 +1,6 @@
+#ifndef FILE_H
+#define FILE_H
+
 class file {
 private:
 	char *path;
@@ -9,3 +12,5 @@ public:
 };
 
 ostream &operator<<( ostream &, file);
+
+#endif

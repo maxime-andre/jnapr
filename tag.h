@@ -1,3 +1,6 @@
+#ifndef TAG_H
+#define TAG_H
+
 class tag {
 private:
 	char *name;
@@ -9,3 +12,5 @@ public:
 };
 
 ostream &operator<<( ostream &, tag);
+
+#endif

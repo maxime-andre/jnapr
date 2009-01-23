@@ -25,3 +25,4 @@ ostream  &operator<<( ostream &o, file f)
    return o;
 }
 
+//commentaire inutile
